@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-obsidian: #090D0C;
+  --color-forest-surface: #101715;
+  --color-forest-elevated: #151E1A;
+  --color-antique-gold: #B89B63;
+  --color-sage-jade: #557B67;
+  --color-parchment: #E9E7DF;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #090D0C;
+    color: #E9E7DF;
+    color-scheme: dark;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+    letter-spacing: 0.01em;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Subtle custom scrollbar for dark luxury surfaces */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090D0C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #23302A;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B89B63;
+}

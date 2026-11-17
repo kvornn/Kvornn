@@ -1,0 +1,6 @@
+{
+  "name": "Sentarika Archive",
+  "description": "Knowledge Never Disappears — Invite-gated, zero-trust digital archive platform with dynamic curation, Discord-style multi-tier permissions, bilingual TR/EN support, and cryptographic audit integrity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
